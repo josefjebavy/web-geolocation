@@ -1,0 +1,14 @@
+version: '3.6'
+
+services:
+
+  web:
+    image: linuxserveradmin
+    container_name: geolocation-web
+
+    volumes:
+      - .:/var/www/project/www
+
+    ports:
+      - 8061:80
+      - 8062:443
